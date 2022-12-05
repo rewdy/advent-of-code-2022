@@ -31,7 +31,6 @@ def get_max_top_three(list_of_lists):
     summed_sorted = [sum(items) for items in list_of_lists]
     summed_sorted.sort()
     summed_sorted.reverse()
-    pprint(summed_sorted[:3])
     return sum(summed_sorted[:3])
 
 
