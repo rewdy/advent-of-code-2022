@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+DIR="$(dirname -- "$0")"
+CODE_DIR="advent_of_code_2022"
+
+echo "What's your new day called?"
+read -r day_base
+
+new_dir="$DIR/$CODE_DIR/$day_base"
+mkdir "$new_dir"
+touch "$new_dir/__init__.py"
+touch "$new_dir/$day_base.py"
+touch "$new_dir/data.py"
+
+echo "🎄 Done. Have fun."
